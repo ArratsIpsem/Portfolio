@@ -1,0 +1,83 @@
+/*BARRA 75%*/
+.barrastodo75 {
+    overflow: hidden;
+
+    height: 100%;
+}
+
+.barrastodo75 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-justify-content: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#contenedor75 {
+    margin: 10px;
+    width: 30em;
+    height: 0.8em;
+background-color: #cde1f8;
+border-radius: 10px;
+}
+    /*final de carga*/
+#barra75 {
+    width: 75%;
+    height: 100%;
+
+    -webkit-animation: progreso 20s ;
+            animation: progreso 20s ;
+border-radius: 10px;
+    background: #0078ff;
+}
+
+#texto75 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+
+    width: 12.5em;
+    height: 100%;
+
+    text-align: center;
+
+    color: #0078ff;
+
+    mix-blend-mode: multiply;
+}
+
+#texto75:after {
+    content: '';
+    -webkit-animation: porcentaje 5s linear infinite;
+            animation: porcentaje 5s linear infinite;
+}
+
+@-webkit-keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+    /*final de carga*/
+    75% {
+        width: 75%;
+    }
+}
+
+
+}
+
